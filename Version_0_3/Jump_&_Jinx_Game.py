@@ -10,7 +10,7 @@ Además, se refactorizó el código anterior para incorporar estos cambios.
 import pygame
 from Configurations import Configurations
 from Game_Funcionalities import game_events, screen_refresh
-from Version_0_3.Media import Background
+from Media import Background
 
 
 def run_game() -> None:
