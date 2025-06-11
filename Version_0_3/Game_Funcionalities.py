@@ -7,7 +7,6 @@ Descripción:
 """
 
 import pygame
-from Configurations import Configurations
 from Media import Background
 
 def game_events() -> bool:
@@ -30,9 +29,7 @@ def screen_refresh(screen: pygame.surface.Surface,
     """
     Función que administra los elementos visuales del juego.
     """
-    background.update()  # Actualiza la posición del fondo
+    background.update()  #Actualiza la posición del fondo
     background.blit(screen)
-
-    pygame.display.flip()
-
-    clock.tick(Configurations.get_fps())
+    #pygame.display.flip()
+    #clock.tick(Configurations.get_fps())
