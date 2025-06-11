@@ -30,6 +30,7 @@ def screen_refresh(screen: pygame.surface.Surface,
     """
     Función que administra los elementos visuales del juego.
     """
+    background.update()  # Actualiza la posición del fondo
     background.blit(screen)
 
     pygame.display.flip()
