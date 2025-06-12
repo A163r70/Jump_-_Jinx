@@ -11,13 +11,36 @@ class Configurations:
     _screen_size = (1280, 720)
     _personaje_size = (300, 300) #🤠🤠🤠agrugé un tamaño al personaje
     _game_title = "Jump & Jinx"
-    _image_background = "../Media/image_b.jpg"
+    _image_background = "../Media/fondo_oficial.png"
     _fps = 8
-    _choice_pesonaje = "../Media/Elige a tu personaje.png" #🤠🤠🤠cargué la imagen de selección
-    _diochan_reposo_image_path = ["../Media/Reposo 1.png", ##🤠🤠🤠 cargué mis sprites de reposo
-                              "../Media/Reposo 2.png",
-                              "../Media/Reposo 3.png",
-                              "../Media/Reposo 4.png"]
+    _choice_pesonaje = "../Media/Elegir_personaje.png" #🤠🤠🤠cargué la imagen de selección
+
+    _sprites_por_personaje = { #🤠🤠diccionario de sprites
+        'A': {  #Diochan
+            'reposo': [
+                "../Media/D_Reposo1.png",
+                "../Media/D_Reposo2.png",
+                "../Media/D_Reposo3.png",
+                "../Media/D_Reposo4.png"
+            ]
+        },
+        'B': {  #Kagura
+            'reposo': [
+                "../Media/K_Reposo1.png",
+                "../Media/K_Reposo2.png",
+                "../Media/K_Reposo3.png",
+                "../Media/K_Reposo4.png"
+            ]
+        },
+        'C': {  #Alberto
+            'reposo': [
+                "../Media/A_Reposo1.png",
+                "../Media/A_Reposo2.png",
+                "../Media/A_Reposo3.png",
+                "../Media/A_Reposo4.png"
+            ]
+        }
+    }
 
     #Pantalla
     _velocidad_inicial = 2
@@ -68,5 +91,5 @@ class Configurations:
 
     #🤠🤠🤠
     @classmethod
-    def get_diochan_reposo_image_path(cls) -> list:
-        return cls._diochan_reposo_image_path
+    def get_sprites_por_personaje(cls) -> dict:
+        return cls._sprites_por_personaje
