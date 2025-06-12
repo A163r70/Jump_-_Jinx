@@ -9,7 +9,7 @@ class Configurations:
     """
     #Definimos el tamaño de la pantalla, título y color de fondo RGB.
     _screen_size = (1280, 720)
-    _personaje_size = (300, 300) #🤠🤠🤠agrugé un tamaño al personaje
+    _personaje_size = (125, 150) #🤠🤠🤠agrugé un tamaño al personaje
     _game_title = "Jump & Jinx"
     _image_background = "../Media/fondo_oficial.png"
     _fps = 8
