@@ -6,7 +6,7 @@ class Personaje:
         self.seleccionado = None  # Lista de imágenes animadas del personaje
         self.sprite_index = 0
         self.last_update = pygame.time.get_ticks()
-        self.velocidad_animacion = 150  # Milisegundos entre frames
+        self.velocidad_animacion = Configurations.get_milisegundos_aparicion()  # Milisegundos entre frames
 
         sprites = Configurations.get_sprites_por_personaje()
         size = Configurations.get_personaje_size()
@@ -37,6 +37,6 @@ class Personaje:
 
     def blit(self, screen: pygame.Surface):
         if self.seleccionado:
-            screen.blit(self.seleccionado[self.sprite_index], (20, 20))
+            screen.blit(self.seleccionado[self.sprite_index], (Configurations.get_posicion_inicial()))
         else:
-            screen.blit(self.imagen_elegir, (0, 0))
+            screen.blit(self.imagen_elegir, (Configurations.get_posicion_eleccion()))
