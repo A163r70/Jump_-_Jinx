@@ -5,13 +5,13 @@ class Personaje:
     def __init__(self):
         self.seleccionado = None
 
-        ruta_diochan = Configurations.get_diochan_reposo_image_path()
-        ruta_kagura = Configurations.get_diochan_reposo_image_path()
-        ruta_alberto = Configurations.get_diochan_reposo_image_path()
-        self.imagenes = { #🤠escalo la imagen cuando la cargo
-            'A': pygame.transform.scale(pygame.image.load(ruta_diochan[0]), Configurations.get_personaje_size()),
-            'B': pygame.transform.scale(pygame.image.load(ruta_kagura[0]), Configurations.get_personaje_size()),
-            'C': pygame.transform.scale(pygame.image.load(ruta_alberto[0]), Configurations.get_personaje_size())
+        sprites = Configurations.get_sprites_por_personaje()
+        tamano = Configurations.get_personaje_size()
+
+        self.imagenes = {
+            'A': pygame.transform.scale(pygame.image.load(sprites['A']['reposo'][0]), tamano),
+            'B': pygame.transform.scale(pygame.image.load(sprites['B']['reposo'][0]), tamano),
+            'C': pygame.transform.scale(pygame.image.load(sprites['C']['reposo'][0]), tamano)
         }
 
         #🤠🤠🤠cargé y escalé la imagen de fondo para elegir personaje con el tamaño de toda la pantalla
