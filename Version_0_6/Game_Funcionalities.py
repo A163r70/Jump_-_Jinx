@@ -8,6 +8,7 @@ Descripción:
 import pygame
 from Media import Background
 from Configurations import Configurations
+from Personajes import Personaje
 
 def game_events(personaje,elegido) -> tuple[bool, bool]:
     """
@@ -33,7 +34,30 @@ def game_events(personaje,elegido) -> tuple[bool, bool]:
                 personaje.elegir('C')
                 elegido = True
 
+            if event.key == pygame.K_SPACE:
+                personaje._is_moving_up = True
+            if event.key == pygame.K_SPACE:
+                personaje._is_moving_down = False
+
+        if event.type == pygame.KEYUP:
+            if event.key == pygame.K_SPACE:
+                personaje.is_moving_up = False
+            if event.key == pygame.K_SPACE:
+                personaje.is_moving_down = True
+
     return game_over, elegido
+
+def check_collision(screen: pygame.surface.Surface, personaje: Personaje):
+    game_over = False
+
+    screen_rect = screen.get_rect()
+
+    if personaje.rect.bottom < screen_rect.top:
+        game_over = True
+    elif personaje.rect.top > screen_rect.bottom:
+        game_over = True
+
+    return game_over
 
 def screen_refresh(screen: pygame.surface.Surface,
                    clock: pygame.time.Clock, background: Background,personaje,bambus) -> None:

@@ -7,6 +7,8 @@ from Bambu import Bambu
 from pygame.sprite import Group
 import time
 
+from Version_0_6.Game_Funcionalities import check_collision
+
 
 def run_game() -> None:
     """
@@ -46,6 +48,8 @@ def run_game() -> None:
             bambu = Bambu(screen)
             bambus.add(bambu)
             tiempo_ultimo_bambu = tiempo_actual
+
+        game_over = check_collision(screen, personaje)
 
         # Eliminar bambús que ya salieron de la pantalla
         for bambu in list(bambus):
