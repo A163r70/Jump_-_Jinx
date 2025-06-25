@@ -13,7 +13,7 @@ class Personaje(Sprite):
         self.velocidad_caida = Configurations.get_sped_personaje()
 
         self._is_moving_up = False
-        self._is_moving_down = False
+        self._is_moving_down = True
 
         self.imagenes = {
             'A': [pygame.transform.scale(pygame.image.load(img), size) for img in sprites['A']['reposo']],

@@ -52,7 +52,7 @@ def check_collision(screen: pygame.surface.Surface, personaje: Personaje):
 
     screen_rect = screen.get_rect()
 
-    if personaje.rect.bottom < screen_rect.top:
+    if personaje.rect.top < screen_rect.top:
         game_over = True
     elif personaje.rect.top > screen_rect.bottom:
         game_over = True
