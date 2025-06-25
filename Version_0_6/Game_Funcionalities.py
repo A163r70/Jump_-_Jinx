@@ -62,7 +62,7 @@ def check_collision(screen: pygame.surface.Surface, personaje: Personaje):
 def screen_refresh(screen: pygame.surface.Surface,
                    clock: pygame.time.Clock, background: Background,personaje,bambus) -> None:
     """
-    Función que administra los elementos visuales del juego.
+    Función que administra los elementos visuales del juego
     """
     background.update()  #Actualiza la posición del fondo
     background.blit(screen)

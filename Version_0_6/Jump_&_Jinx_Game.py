@@ -51,7 +51,7 @@ def run_game() -> None:
 
         game_over = check_collision(screen, personaje)
 
-        # Eliminar bambús que ya salieron de la pantalla
+        # Eliminar bambús que ya salieron de la pantalla.
         for bambu in list(bambus):
             if bambu.rect_abajo.right < 0:
                 bambus.remove(bambu)

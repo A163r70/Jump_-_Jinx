@@ -8,7 +8,7 @@ class Bambu(Sprite):
         super().__init__()
         self.screen = screen
 
-        # Tamaño de pantalla y bambú
+        # Tamaño de pantalla y el bambú
         screen_rect = screen.get_rect()
         bambu_image_path = Configurations.get__image_bambu()
         bambu_width, bambu_height = Configurations.get_bambu_size()
