@@ -1,8 +1,6 @@
 """
 Nombre: Equipo los Bugs
 Fecha: 9 de junio del 2025.
-
-Descripción:
 """
 
 import pygame
