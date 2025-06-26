@@ -37,7 +37,7 @@ class Bambu(Sprite):
     def update_position(self):
         self._rect_x -= self._speed
         self.rect_arriba.x = int(self._rect_x)
-        self.rect_abajo.x = int(self._rect_x)
+        self.rect_abajo.x = int(self._rect_x)#
 
     def blit(self, screen):
         screen.blit(self.image_arriba, self.rect_arriba)

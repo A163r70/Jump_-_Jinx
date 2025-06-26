@@ -19,7 +19,7 @@ class Shuriken(Sprite):
 
         shuriken_frame_size = Configurations.get_shuriken_size()
 
-        for i in range(sheet_frames_per_row):
+        for i in range(sheet_frames_per_row):#
             x = i * shuriken_frame_width
             y = 0
             subsurface_rect = (x, y, shuriken_frame_width, shuriken_frame_height)

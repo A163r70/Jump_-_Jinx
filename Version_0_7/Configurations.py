@@ -15,8 +15,8 @@ class Configurations:
     _fps = 8
     _choice_pesonaje = "../Media/Elegir_personaje.png" #🤠🤠🤠cargué la imagen de selección
 
-    _sprites_por_personaje = { #🤠🤠diccionario de sprites
-        'A': {  #Diochan
+    _sprites_por_personaje = {  # 🤠🤠diccionario de sprites
+        'A': {  # Diochan
             'reposo': [
                 "../Media/D_S_1.png",
                 "../Media/D_S_2.png",
@@ -24,7 +24,7 @@ class Configurations:
                 "../Media/D_S_4.png"
             ]
         },
-        'B': {  #Kagura
+        'B': {  # Kagura
             'reposo': [
                 "../Media/K_S_1.png",
                 "../Media/K_S_2.png",
@@ -32,7 +32,7 @@ class Configurations:
                 "../Media/K_S_4.png"
             ]
         },
-        'C': {  #Alberto
+        'C': {  # Alberto
             'reposo': [
                 "../Media/A_S_1.png",
                 "../Media/A_S_2.png",
