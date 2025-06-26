@@ -3,7 +3,7 @@ from Configurations import Configurations
 
 class Background:
     """
-    Clase que contiene el fondo de pantalla.
+    Clase que contiene el fondo de pantalla
     """
 
     def __init__(self):

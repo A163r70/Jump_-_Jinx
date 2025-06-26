@@ -2,8 +2,6 @@
 Nombre: Equipo los Bugs
 Fecha: 10 de junio del 2025.
 
-Descripción:
-
 """
 from typing import Any
 
@@ -18,7 +16,7 @@ def game_events(personaje,elegido) -> tuple[bool, bool]:
     """
     game_over = False
 
-    #Revisamos todos los eventos generados por el usuario.
+    #Revisamos todos los eventos generados por el usuario
 
     for event in pygame.event.get():
         #Si el usuario cierra la ventana, indicamos que se debe terminar el juego.
