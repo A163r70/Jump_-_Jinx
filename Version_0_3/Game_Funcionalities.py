@@ -1,9 +1,6 @@
 """
 Nombre: Equipo los Bugs
 Fecha: 10 de junio del 2025.
-
-Descripción:
-
 """
 from typing import Any
 

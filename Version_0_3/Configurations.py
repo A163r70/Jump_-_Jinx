@@ -18,26 +18,27 @@ class Configurations:
     _sprites_por_personaje = { #🤠🤠diccionario de sprites
         'A': {  #Diochan
             'reposo': [
-                "../Media/D_Reposo1.png",
-                "../Media/D_Reposo2.png",
-                "../Media/D_Reposo3.png",
-                "../Media/D_Reposo4.png"
+                "../Media/D_S_1.png",
+                "../Media/D_S_2.png",
+                "../Media/D_S_3.png",
+                "../Media/D_S_4.png"
             ]
         },
         'B': {  #Kagura
             'reposo': [
-                "../Media/K_Reposo1.png",
-                "../Media/K_Reposo2.png",
-                "../Media/K_Reposo3.png",
-                "../Media/K_Reposo4.png"
+                "../Media/K_S_1.png",
+                "../Media/K_S_2.png",
+                "../Media/K_S_3.png",
+                "../Media/K_S_4.png"
             ]
         },
         'C': {  #Alberto
             'reposo': [
-                "../Media/A_Reposo1.png",
-                "../Media/A_Reposo2.png",
-                "../Media/A_Reposo3.png",
-                "../Media/A_Reposo4.png"
+                "../Media/A_S_1.png",
+                "../Media/A_S_2.png",
+                "../Media/A_S_3.png",
+                "../Media/A_S_4.png",
+                "../Media/A_S_5.png"
             ]
         }
     }
