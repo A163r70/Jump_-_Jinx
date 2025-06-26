@@ -14,7 +14,7 @@ import time
 def game_events(personaje,elegido,audio) -> tuple[bool, bool]:
     """
     Función que administra los eventos del juego.
-    :return: La bandera del fin del juego.
+    :return: La bandera del fin del juego
     """
     game_over = False
 

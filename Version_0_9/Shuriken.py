@@ -25,7 +25,7 @@ class Shuriken(Sprite):
             subsurface_rect = (x, y, shuriken_frame_width, shuriken_frame_height)
             frame = shuriken_path.subsurface(subsurface_rect)
 
-            frame = pygame.transform.scale(frame, shuriken_frame_size)
+            frame = pygame.transform.scale(frame, shuriken_frame_size)#
 
             self._frames.append(frame)
 

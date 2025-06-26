@@ -13,7 +13,7 @@ class Configurations:
     _game_title = "Jump & Jinx"
     _image_background = "../Media/fondo_oficial.png"
     _fps = 8
-    _choice_pesonaje = "../Media/Elegir_personaje.png" #🤠🤠🤠cargué la imagen de selección
+    _choice_pesonaje = "../Media/Elegir_personaje.png" #🤠🤠🤠cargué la imagen de selección.
 
     _sprites_por_personaje = { #🤠🤠diccionario de sprites
         'A': {  #Diochan

@@ -22,7 +22,7 @@ class Bambu(Sprite):
             pygame.transform.flip(original_image, False, True),
             (bambu_width, altura_hueco)
         )
-        self.rect_arriba = self.image_arriba.get_rect(bottom=altura_hueco, left=screen_rect.width)
+        self.rect_arriba = self.image_arriba.get_rect(bottom=altura_hueco, left=screen_rect.width)#
 
         altura_abajo = screen_rect.height - altura_hueco - self.espacio
         self.image_abajo = pygame.transform.scale(
