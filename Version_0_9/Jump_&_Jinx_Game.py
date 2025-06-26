@@ -1,6 +1,6 @@
 import pygame
 from Configurations import Configurations
-from Game_Funcionalities import game_events, screen_refresh,game_over_screen
+from Game_Funcionalities import game_events, screen_refresh,game_over_screen,check_collision
 from Media import Background, Background_selection,Audio,GameOverImage
 from Personajes import Personaje
 from Bambu import Bambu
@@ -8,9 +8,6 @@ from pygame.sprite import Group
 import time
 from Enemigo import Enemigo
 from Shuriken import Shuriken
-
-
-from Version_0_6.Game_Funcionalities import check_collision
 
 
 def run_game() -> None:
@@ -80,7 +77,7 @@ def run_game() -> None:
             bambus.add(bambu)
             tiempo_ultimo_bambu = tiempo_actual
 
-        game_over = check_collision(screen, personaje, bambus)
+        game_over = check_collision(screen, personaje, bambus,shuriken_group)
 
         # 🎯Revisar para sumar al score
         for bambu in list(bambus):
