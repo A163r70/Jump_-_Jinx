@@ -1,8 +1,6 @@
 """
 Nombre: Equipo los Bugs
-Fecha:  del 2025.
-
-Descripción:
+Fecha: 09 del 2025.
 
 """
 

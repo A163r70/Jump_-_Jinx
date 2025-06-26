@@ -1,6 +1,6 @@
 """
 Nombre: Equipo los Bugs
-Fecha:
+Fecha: 09 de junio de 2025
 """
 
 class Configurations:

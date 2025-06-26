@@ -1,6 +1,6 @@
 """
 Nombre: Equipo los Bugs
-Fecha: 12 de mayo del 2025.
+Fecha: 09 de junio del 2025.
 
 Descripción:
 Se añadieron dos nuevos módulos: Configurations.py con la clase Configurations para las configuraciones
