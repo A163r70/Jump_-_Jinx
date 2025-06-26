@@ -10,7 +10,7 @@ import time
 
 def run_game() -> None:
     """
-    Función principal del videojuego.
+    Función principal del videojuego
     """
     pygame.init()
     clock = pygame.time.Clock()

@@ -3,7 +3,7 @@ from Configurations import Configurations
 
 class Background:
     """
-    Clase que contiene el fondo de pantalla.
+    Clase que contiene el fondo de pantalla
     """
 
     def __init__(self):
@@ -36,7 +36,7 @@ class Background:
 
     def blit(self, screen: pygame.surface.Surface):
         """
-        Se utiliza para dibujar el fondo de pantalla.
+        Se utiliza para dibujar el fondo de pantalla
         """
         screen.blit(self.image, (self.x1, self.y))
         screen.blit(self.image, (self.x2, self.y))
