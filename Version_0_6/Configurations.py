@@ -27,9 +27,10 @@ class Configurations:
         'B': {  #Kagura
             'reposo': [
                 "../Media/K_Reposo_1.png",
-                "../Media/K_Rposo_2.png",
+                "../Media/K_Reposo_2.png",
                 "../Media/K_Reposo_3.png",
-                "../Media/K_Reposo_4.png"
+                "../Media/K_Reposo_4.png",
+                "../Media/K_Reposo_5.png"
             ]
         },
         'C': {  #Alberto
@@ -47,8 +48,8 @@ class Configurations:
     _aceleracion = 0.002
 
     _image_bambu = "../Media/bambu.png"
-    _bambu_size = (300, 144)
-    _bambu_speed= 15.5
+    _bambu_size = (100, 144)
+    _bambu_speed= 20
 
     #pantallaseleccion
     _frames_seleccion = 30

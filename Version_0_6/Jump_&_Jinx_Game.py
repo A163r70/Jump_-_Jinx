@@ -39,7 +39,6 @@ def run_game() -> None:
     bambus = Group()
 
     while not game_over and elegido:
-        game_over,elegido = game_events(personaje,elegido)
 
         # Generar nuevo bambú si ha pasado suficiente tiempo
         tiempo_actual = time.time()
@@ -49,7 +48,8 @@ def run_game() -> None:
             bambus.add(bambu)
             tiempo_ultimo_bambu = tiempo_actual
 
-        game_over = check_collision(screen, personaje)
+        game_over = check_collision(screen, personaje, bambus)
+
 
         # Eliminar bambús que ya salieron de la pantalla.
         for bambu in list(bambus):
@@ -57,6 +57,7 @@ def run_game() -> None:
                 bambus.remove(bambu)
 
         screen_refresh(screen, clock, background, personaje, bambus)
+        game_over, elegido = game_events(personaje, elegido)
 
     pygame.quit()
 

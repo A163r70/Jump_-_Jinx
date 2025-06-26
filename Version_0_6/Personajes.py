@@ -21,23 +21,15 @@ class Personaje(Sprite):
             'C': [pygame.transform.scale(pygame.image.load(img), size) for img in sprites['C']['reposo']]
         }
 
-        self.image = pygame.transform.scale(
-            pygame.image.load(Configurations.get_choice_pesonaje()),
-            Configurations.get_screen_size()
-        )
         self.last_update = pygame.time.get_ticks()
         self.velocidad_animacion = Configurations.get_milisegundos_aparicion()  # Milisegundos entre frames
 
-        self.rect = self.image.get_rect()
+        self.rect = pygame.Rect(0, 0, size[0], size[1])
         screen_rect = screen.get_rect()
         self._rect_x = Configurations.get_posicion_inicial()[0]
         self._rect_y = Configurations.get_posicion_inicial()[1]
-        self.rect.centery = screen_rect.centery
-        self.rect.right = screen_rect.right
-
-        screen_rect = screen.get_rect()
-        self.rect.right = screen_rect.right
-        self.rect.centery = screen_rect.centery
+        self.rect.left = self._rect_x
+        self.rect.top = self._rect_y
 
     def elegir(self, tecla: str):
         if tecla in self.imagenes and not self.seleccionado:
@@ -45,6 +37,11 @@ class Personaje(Sprite):
             self.sprite_index = 0
             self.last_update = pygame.time.get_ticks()
 
+            self.image = self.seleccionado[self.sprite_index]
+            self.rect = self.image.get_rect()
+            # Colocamos la posición esperada
+            self.rect.left = self._rect_x
+            self.rect.top = self._rect_y
 
     def animation(self):
 

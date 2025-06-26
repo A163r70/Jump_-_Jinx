@@ -47,8 +47,9 @@ def game_events(personaje,elegido) -> tuple[bool, bool]:
 
     return game_over, elegido
 
-def check_collision(screen: pygame.surface.Surface, personaje: Personaje):
+def check_collision(screen: pygame.surface.Surface, personaje: Personaje, bambus):
     game_over = False
+
 
     screen_rect = screen.get_rect()
 
@@ -56,6 +57,10 @@ def check_collision(screen: pygame.surface.Surface, personaje: Personaje):
         game_over = True
     elif personaje.rect.top > screen_rect.bottom:
         game_over = True
+
+    for bambu in bambus:
+        if personaje.rect.colliderect(bambu.rect_arriba) or personaje.rect.colliderect(bambu.rect_abajo):
+            return True
 
     return game_over
 
@@ -70,14 +75,21 @@ def screen_refresh(screen: pygame.surface.Surface,
     for bambu in bambus.sprites():
         bambu.update_position()
         bambu.blit(screen)
+        pygame.draw.rect(screen, (0, 255, 0), bambu.rect_arriba, 2)
+        pygame.draw.rect(screen, (0, 255, 0), bambu.rect_abajo, 2)
+  # Rojo
 
     #Actualiza y dibuja al personaje y hace la caida y animacion
     personaje.update_position()
     personaje.animation()
     personaje.blit(screen)
+    pygame.draw.rect(screen, (255, 0, 0), personaje.rect, 2)
 
     pygame.display.flip()
     clock.tick(Configurations.get_fps())
+
+
+
 
 
 
