@@ -51,6 +51,8 @@ class Configurations:
     _image_bambu = "../Media/bambu.png"
     _bambu_size = (100, 144)
     _bambu_speed= 20
+    _espacio = 270
+    _altura_maxima = 100
 
     #pantallaseleccion
     _frames_seleccion = 30
@@ -291,3 +293,17 @@ class Configurations:
         Getter para _apple_color
         """
         return cls._game_over_screen_time
+
+    @classmethod
+    def get_espacio(cls) -> int:
+        """
+        Getter para espacio
+        """
+        return cls._espacio
+
+    @classmethod
+    def get_altura_maxima(cls) -> int:
+        """
+        Getter para _altura_maxima del bambu
+        """
+        return cls._altura_maxima

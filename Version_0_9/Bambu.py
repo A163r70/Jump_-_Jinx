@@ -12,9 +12,9 @@ class Bambu(Sprite):
         bambu_image_path = Configurations.get__image_bambu()
         bambu_width, bambu_height = Configurations.get_bambu_size()
 
-        self.espacio = 270
-        altura_maxima = screen_rect.height - self.espacio - 100
-        altura_hueco = random.randint(100, altura_maxima)
+        self.espacio = Configurations.get_espacio()
+        altura_maxima = screen_rect.height - self.espacio - Configurations.get_altura_maxima()
+        altura_hueco = random.randint(Configurations.get_altura_maxima(), altura_maxima)
 
         original_image = pygame.image.load(bambu_image_path)
 
