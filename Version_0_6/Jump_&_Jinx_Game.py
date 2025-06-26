@@ -12,7 +12,7 @@ from Version_0_6.Game_Funcionalities import check_collision
 
 def run_game() -> None:
     """
-    Función principal del videojuego.
+    Función principal del videojuego
     """
     pygame.init()
     clock = pygame.time.Clock()

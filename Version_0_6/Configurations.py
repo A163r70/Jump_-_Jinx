@@ -15,30 +15,30 @@ class Configurations:
     _fps = 8
     _choice_pesonaje = "../Media/Elegir_personaje.png" #🤠🤠🤠cargué la imagen de selección
 
-    _sprites_por_personaje = { #🤠🤠diccionario de sprites
-        'A': {  #Diochan
+    _sprites_por_personaje = {  # 🤠🤠diccionario de sprites
+        'A': {  # Diochan
             'reposo': [
-                "../Media/D_Reposo1.png",
-                "../Media/D_Reposo2.png",
-                "../Media/D_Reposo3.png",
-                "../Media/D_Reposo4.png"
+                "../Media/D_S_1.png",
+                "../Media/D_S_2.png",
+                "../Media/D_S_3.png",
+                "../Media/D_S_4.png"
             ]
         },
-        'B': {  #Kagura
+        'B': {  # Kagura
             'reposo': [
-                "../Media/K_Reposo_1.png",
-                "../Media/K_Reposo_2.png",
-                "../Media/K_Reposo_3.png",
-                "../Media/K_Reposo_4.png",
-                "../Media/K_Reposo_5.png"
+                "../Media/K_S_1.png",
+                "../Media/K_S_2.png",
+                "../Media/K_S_3.png",
+                "../Media/K_S_4.png"
             ]
         },
-        'C': {  #Alberto
+        'C': {  # Alberto
             'reposo': [
-                "../Media/A_Reposo1.png",
-                "../Media/A_Reposo2.png",
-                "../Media/A_Reposo3.png",
-                "../Media/A_Reposo4.png"
+                "../Media/A_S_1.png",
+                "../Media/A_S_2.png",
+                "../Media/A_S_3.png",
+                "../Media/A_S_4.png",
+                "../Media/A_S_5.png"
             ]
         }
     }

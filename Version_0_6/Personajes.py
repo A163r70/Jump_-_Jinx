@@ -22,7 +22,7 @@ class Personaje(Sprite):
         }
 
         self.last_update = pygame.time.get_ticks()
-        self.velocidad_animacion = Configurations.get_milisegundos_aparicion()  # Milisegundos entre frames
+        self.velocidad_animacion = Configurations.get_milisegundos_aparicion()  #Milisegundos entre frames
 
         self.rect = pygame.Rect(0, 0, size[0], size[1])
         screen_rect = screen.get_rect()

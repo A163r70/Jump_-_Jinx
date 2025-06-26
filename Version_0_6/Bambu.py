@@ -6,7 +6,7 @@ import random
 class Bambu(Sprite):
     def __init__(self, screen):
         super().__init__()
-        self.screen = screen
+        self.screen = screen #screen
 
         screen_rect = screen.get_rect()
         bambu_image_path = Configurations.get__image_bambu()
