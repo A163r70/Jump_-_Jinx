@@ -17,7 +17,6 @@ class Enemigo(Sprite):
 
         self._frame_index = 0
         self.image = self._enemy_frames[self._frame_index]
-        #self._frame_index = 1
 
         self.rect = self.image.get_rect()
 
